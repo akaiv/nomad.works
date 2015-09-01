@@ -1,3 +1,21 @@
 .site-header {
-	// header stylesheet
+	margin-top:    50px;
+	margin-bottom: 50px;
+}
+
+.site-title {
+	.normal;
+	margin: 0;
+	a {
+		border-bottom: 2px solid @line;
+		color: @text-light;
+		display: inline-block;
+		padding-bottom: 0.25em;
+		letter-spacing: 0.25em;
+		transition: all .1s ease-in;
+		&:hover {
+			color: @text;
+			border-color: @line-dark;
+		}
+	}
 }
