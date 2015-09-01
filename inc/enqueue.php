@@ -21,3 +21,9 @@ function akaiv_scripts() {
   wp_enqueue_script( 'project-script',   get_template_directory_uri() . $assets['js'], array( 'jquery' ), null, true );
 }
 add_action( 'wp_enqueue_scripts', 'akaiv_scripts' );
+
+/* 구글 폰트 */
+function akaiv_add_google_fonts() {
+  wp_enqueue_style( 'akaiv-googleFonts', 'https://fonts.googleapis.com/css?family=Lato:400,300,700' );
+}
+add_action( 'wp_print_styles', 'akaiv_add_google_fonts' );
