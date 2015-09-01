@@ -15,32 +15,10 @@
 <a class="skip-link sr-only" href="#content"><?php echo 'Skip to content'; ?></a>
 
 <header id="masthead" class="site-header" role="banner">
-  <nav id="gnb" class="site-navigation gnb navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gnb-collapse">
-          <span class="sr-only">메뉴 토글</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a id="brand" class="site-title navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-      </div>
-      <?php
-        wp_nav_menu( array(
-          'theme_location'    => 'gnb',
-          'depth'             => 2,
-          'container'         => 'div',
-          'container_id'      => 'gnb-collapse',
-          'container_class'   => 'collapse navbar-collapse navbar-right',
-          'menu_class'        => 'nav navbar-nav',
-          'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-          'walker'            => new wp_bootstrap_navwalker()
-        ) );
-      ?>
-    </div><!-- .container -->
-  </nav>
-</header><!-- .site-header -->
+  <div class="container">
+    <h1 class="site-title uppercase"><a id="brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+  </div>
+</header>
 
 <main id="main" class="site-main" role="main">
   <?php if ( ! is_home() && ! is_front_page() ) echo '<div class="container">'; ?>
