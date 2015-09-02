@@ -4,7 +4,10 @@ html {
 }
 body {
 	// padding-top: (@navbar-height + 10px);
-	margin-bottom: (@footer-height + @footer-margin);
+	margin-bottom: (30px + @footer-margin);
+	@media (min-width: @phone) {
+		margin-bottom: (@footer-height + @footer-margin);
+	}
 }
 
 // 메인

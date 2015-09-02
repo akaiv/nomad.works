@@ -1,7 +1,9 @@
 @footer-height: 60px;
 @footer-margin: 30px;
 .site-footer {
-	height:     @footer-height;
+	@media (min-width: @grid-float-breakpoint) {
+		height: @footer-height;
+	}
 	margin-top: @footer-margin;
 	position: absolute;
 	bottom: 0;
