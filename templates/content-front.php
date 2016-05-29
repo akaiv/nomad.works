@@ -10,12 +10,10 @@
   the_post();
 ?>
 
-<div class="container">
-  <div class="page-content">
-    <?php the_content(); ?>
-  </div>
-</div>
+<section class="page-content">
+  <?php the_content(); ?>
+</section>
+
+<?php # 여기부터 구인 목록 추가 ?>
 
 <?php akaiv_after_post(); ?>
-
-<!-- 여기부터 구인 목록 추가 -->
